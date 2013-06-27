@@ -136,7 +136,7 @@ body {
 /*------------------------------------------------------Height query---------*/
 @media (max-height: 800px) {
 	#buttons {
-		height: 600px;
+		height: 400px;
 	}
 	
 	#screen {
