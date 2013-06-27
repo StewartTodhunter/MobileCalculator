@@ -117,24 +117,23 @@ body {
 		font-size: 1.5em;
 		height: 40px;
 		padding-left: 15px;
-		text-align: left;
 	}
 	
 	.button, .operator {
 		width: 55px;
 		font-size: 2em;
-		height: 40px;
+		height: 60px;
 	}
 	
 	#equalbutton {
-		height: 100px;
+		height: 140px;
 	}
 	
 	#buttons {
-		height: 300px;
+		height: 400px;
 	}
 }
-/*------------------------------------------------------Height query---------*/
+/*------------------------------------------------------Height queries---------*/
 @media (max-height: 800px) {
 	#buttons {
 		height: 400px;
@@ -153,5 +152,11 @@ body {
 	
 	#equalbutton {
 		height: 140px;
+	}
+}
+
+@media (max-height: 800px) and (max-width: 600px) {
+	#screen {
+		text-align: left;
 	}
 }
