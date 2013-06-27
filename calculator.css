@@ -136,7 +136,7 @@ body {
 /*------------------------------------------------------Height query---------*/
 @media (max-height: 800px) {
 	#buttons {
-		height: 300px;
+		height: 600px;
 	}
 	
 	#screen {
@@ -147,7 +147,7 @@ body {
 	
 	.button, .operator {
 		font-size: 2em;
-		height: 40px;
+		height: 60px;
 	}
 	
 	#equalbutton {
