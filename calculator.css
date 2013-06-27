@@ -1,0 +1,156 @@
+body {
+	background-color: #CDC9C9;
+	border: 0px;
+}
+
+#wrapper {
+	margin: auto;
+	width: 920px;	
+	background-color: #303030;
+	padding: 20px;
+	padding-top: 30px;
+	-webkit-border-radius: 30px;
+	border-radius: 50px;
+	-webkit-box-shadow: inset 0px -5px 30px 0px #000000;
+	box-shadow: inset 0px -5px 30px 0px #000000;
+}
+
+.button, .operator {
+	background-color: #8B8989;
+	font-family: sans-serif;
+	font-size: 5em;
+	margin: 10px;
+	float: left;	
+	width: 210px;
+	height: 100px;
+	margin-left: 10;
+	margin-top: 10px;
+	font-size: 5em;
+	background-color: #8B8989;
+	border: 0px;
+	color: white;	
+	-webkit-box-shadow: 0px 5px 20px 0px #000000;
+	box-shadow: 0px 5px 20px 0px #000000;
+}
+
+.operator {
+	background-color: #3063A5;
+}
+
+#equalbutton {
+	height: 220px;
+	float:right;
+}
+
+.button:hover, .operator:hover, #equalbutton:hover  {
+	color: #3063A5;
+	background-color: white;
+	cursor: pointer;
+}
+
+.button:active, .operator:active, #equalbutton:active {
+	background-color: orange;
+	color: white;
+}
+
+#screen {
+	background-color: #7A7A7A;
+	color: black;
+	font-size: 5em;
+	padding: 40px;
+	padding-bottom: 0px;
+	padding-top: 20px;
+	height: 90px;
+	overflow: hidden;
+	margin-left: 15px;
+	margin-right: 16px;
+	margin-bottom:20px;
+	
+	font-family: 'Press Start 2P', cursive;
+	text-shadow: 0px 2px 10px #1f1f1f;
+    filter: dropshadow(color=#1f1f1f, offx=0, offy=2);
+		
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+		
+	-webkit-box-shadow: inset 0px 10px 40px -5px #000000;
+	box-shadow: inset 0px 10px 40px -5px #000000;
+}
+
+#buttons {
+	height: 600px;
+}
+
+/*------------------------------------------------------width queries---------*/
+@media (max-width: 960px) {
+	#wrapper {
+		width: 700px;
+	}
+	
+	.button, .operator {
+		width: 155px;
+	}
+}
+
+@media (max-width: 800px) {
+	#wrapper {
+		width: 500px;
+	}
+	
+	.button, .operator {
+		width: 105px;
+		font-size: 4em;
+	}
+	
+	#screen {
+		font-size: 2.5em;
+		height: 60px;
+	}
+}
+
+@media (max-width: 600px) {
+	#wrapper {
+		width: 300px;
+	}
+	
+	#screen {
+		font-size: 1.5em;
+		height: 40px;
+		padding-left: 15px;
+	}
+	
+	.button, .operator {
+		width: 55px;
+		font-size: 2em;
+		height: 40px;
+	}
+	
+	#equalbutton {
+		height: 100px;
+	}
+	
+	#buttons {
+		height: 300px;
+	}
+}
+/*------------------------------------------------------Height query---------*/
+@media (max-height: 800px) {
+	#buttons {
+		height: 400px;
+	}
+	
+	#screen {
+		height: 40px;
+		font-size: 1.5em;
+		text-align: center;
+	}
+	
+	.button, .operator {
+		font-size: 2em;
+		height: 60px;
+	}
+	
+	#equalbutton {
+		height: 140px;
+	}
+}
